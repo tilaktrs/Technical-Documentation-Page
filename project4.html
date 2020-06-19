@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <style>
+      
+          #main-doc{
+              border: 2px solid black;
+              background-color:rgba(0,0,0,0.2);
+          }
+      
+          .main-section{
+              margin-left: 100px;
+          }
+      
+          .contents{
+              margin-left:30px;
+          }
+          .nav-link:hover{
+              border: 2px solid red;
+          }
+          
+          #img{
+              border: 2px solid black;
+          }
+          .nav-link:hover{
+        color: blue;    
+          }
+          
+      @media only screen and (max-width: 1000px) {
+  #main-doc{
+    background-color:lightblue;
+  }
+       @media only screen and (max-width: 1000px) {
+  #img{
+    border: 5px solid black;
+  }
+      
+      
+      
+      </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+      
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <header>
+  <a class="navbar-brand" href="#"><B>JAVASCRIPT(JS)</B></a>
+        </header>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="project4.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#features"
+           class="nav-link">Features</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+           class="nav-link">
+          MUST LEARN!
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#javascript_and_java" class="nav-link">javascript and java</a>
+          <a class="dropdown-item" href="#hello_world" class="nav-link">hello world</a>
+          <a class="dropdown-item" href="#Variables" class="nav-link">Variables</a>
+            <a class="dropdown-item" href="#if_else_statement" class="nav-link">if....else statements</a>
+            <a class="dropdown-item" href="#while_statement" class="nav-link">While statements</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+      <br>
+      <br>
+      
+      
+      <main id="main-doc">
+      <h2>INTRODUCTION TO  JS</h2>
+    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+        <img src="javascript1_1.png" alt="javascript client-server" id="img">
+          </p>
+          <ul>
+          <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+            <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+           </ul>
+          <br>
+          <section >
+      <h3> CONTENTS:</h3>
+              <ul class="contents">
+                  <li> <a href="#javascript_and_java">JAVASCRIPT AND JAVA</a></li>
+              <li><a href="#hello_world">HELLO WORLD</a></li>
+                  <li><a href="#Variables">VARIABLES</a></li>
+                  <ul>
+                  <li><a href="#dv">Declaring varaibles</a></li>
+                      <li><a href="#vs">variable scope</a></li>
+                      <li><a href="#gv">Global variables</a></li></ul>
+                  <li><a href="#if_else_statement">IF....ELSE STATEMENTS</a></li>
+                  <li><a href="#while_statement">WHILE STATEMENT</a></li>
+                  <li><a href="#features">FEATURES</a></li>
+              </ul>
+          </section>
+          <hr>
+      <section class=" main-section" id="javascript_and_java">
+      <header>
+          <h4>1.javascript and java</h4>
+          <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+<p>
+In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+<p>
+JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p></header></section>
+      
+      <section class=" main-section" id="hello_world">
+          <header><h4>2.Hello world</h4>
+          <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+          <code>function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");
+              </code></header></section>
+          
+      <section class=" main-section"  id="Variables">
+          <header><h4>3.Variables</h4>
+              <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+<p>
+A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+<p>
+You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+          <div>
+          <ul>
+          <li id="dv"><B>Declaring variables</B></li>
+              <p>You can declare a variable in three ways:
+With the keyword var. For example,
+<code>var x = 42.</code>
+                  This syntax can be used to declare both local and global variables.</p>
+<p>
+By simply assigning it a value. For example,
+<code>x = 42.</code>
+This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+</p>
+              <p>
+With the keyword let. For example,
+ let <code>y = 13.</code>
+This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+              <li id="vs"><B>Variable scope</B></li>
+              <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+
+JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+<p>
+if (true) 
+    <code>{ var x = 5; } console.log(x); </code>// 5
+    This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+<p>
+if (true) <code>{ let y = 5; } console.log(y); </code>// ReferenceError: y is not
+defined</p>
+              <li id="gv"><B>Global variable</B></li>
+              <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+<p>
+Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+          
+          </ul>
+          </div>
+          </header></section>
+      <section class=" main-section" id="if_else_statement">
+          <header><h4>4.if.....else statement</h4>
+          <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:<br>
+<code>if (condition) { statement_1; } else { statement_2; }</code></p>
+              <p>
+condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+              <p>
+You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:<br>
+<code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+} else if (condition_n) { statement_n; } else { statement_last; }
+    </code>
+</p></header>
+          
+          
+          
+          </section>
+      <section class=" main-section" id="while_statement">
+          <header><h4>5.While statement</h4>
+          <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:<br>
+              <code>while (condition) statement</code></p>
+              <p>
+If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+
+                  To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+              <p>
+Example:
+The following while loop iterates as long as n is less than three:<br>
+
+                  <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }
+                                                           </code></p>
+          </header></section>
+          
+          <section class="main-section" id="features">
+              <h4 id="features">FEATURES</h4>
+          <img src="Features-of-JavaScript.jpg" alt="features">
+          
+          </section>
+      
+      
+  </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
